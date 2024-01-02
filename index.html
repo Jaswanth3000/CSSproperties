@@ -1,0 +1,221 @@
+<html>
+<head>
+    <title>Css properties</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: gray;
+            border: 20px solid lightseagreen;
+            padding: 30px;
+            margin: 50px;
+            color: white;
+        }
+
+        .text-div{
+            width: 500px;
+            border: 2px solid black;
+        }
+        h1.a{
+            text-align: center;
+            text-transform: uppercase;
+            color: rgb(67, 156, 225);
+        }
+        p.x{
+            text-indent: 60px;
+            text-align: justify;
+            letter-spacing: 2px;
+        }
+        a.a{
+            text-decoration: none;
+            color: rgb(247, 13, 204);
+        }
+        h3{
+            background-color: blueviolet;
+            color: white;
+        }
+        p.a{
+            text-decoration: overline;
+        }
+        p.b{
+            text-decoration: underline;
+        }
+        p.c{
+            text-decoration: line-through;
+        }
+        p.d{
+            text-transform: capitalize;
+        }
+        h1.b{
+            text-shadow: 3px 3px rgb(0, 108, 138);
+        }
+        .gal-container{
+            border: 2px solid gray;
+            height: 400px;
+            width: 1100px;
+        }
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 250px;
+        }
+
+        div.gallery:hover {
+            border: 1px solid orange;
+            box-shadow: 0px 0px 30px orange;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: 40%;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: justify;
+        }
+        img{
+            width: "";
+            height: "";
+        }
+        .links{
+            border: 2px solid gray;
+        }
+        a.l:visited {
+            color: hotpink;
+        }
+        a.l:hover {
+            color: red;
+        }
+        a.l:active {
+            color: blue;
+        }
+        .ol1{
+            background-color: rgb(237, 0, 39);
+            padding: 20px;
+            list-style-type: lower-roman;
+        }
+        .ol1 li{
+            padding: 5px;
+            background-color: rgb(255, 67, 99);
+        }
+        .ul1{
+            background-color: rgb(218, 123, 0);
+            padding: 30px;
+            list-style-type: square;
+        }
+        .ul1 li{
+            background-color: orange;
+            margin: 10px;
+        }
+        p.parag{
+            display: none;
+            background-color: aqua;
+            padding: 20px;
+        }
+        div.pseudo:hover p.parag{
+            display: block;
+        }
+        .pseudo-text::first-line{
+            color: crimson;
+        }
+        .pseudo-text::first-letter{
+            font-size: xx-large;
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h1>CSS lists</h1>
+    This is an ordered list
+    <ol class="ol1">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ol>
+    This is an unordered list
+    <ul class="ul1">
+        <li>Popcorn</li>
+        <li>Netflix</li>
+        <li>Anime</li>
+    </ul>
+    </div>
+    <hr>
+    <h1>CSS Box model</h1>
+    <div class="box">
+        This is written in a box, with a width and height of 300px, 
+        border of 20px solid lightseagreen, padding of 30px and a margin of 50px.
+    </div>
+    <hr>
+    <div class="text-div">
+        <h1 class="a">Text Properties</h1>
+        <p class="x">This is a text written by changing some text properties like, text-align, text-transform, 
+            text-indent, letter-spacing, text-decoration and color. You can also 
+            refer the W3 schools website from   <a class="a" href="https://www.w3schools.com/css/css_text.asp">
+                this link.</a>to know more about text properties and how to use them.
+        </p>
+        <h3>This is made by adding background-color and text color</h3>
+        <p class="a">This is overlined text</p>
+        <p class="b">This is underlined text</p>
+        <p class="c">This is line-through text</p>
+        <p class="d">This is capitalized text</p>
+        <h1 class="b">This is a Shadow effect</h1>
+    </div>
+    <br>
+    <div class="gal-container">
+        <h1 style="color: rgb(34, 144, 241);text-align: center;">IMAGE GALLERY</h1>
+        <div class="gallery">
+            <a target="_blank" href="images/Naruto.jpg">
+              <img src="images/Naruto.jpg" alt="Naruto">
+            </a>
+            <div class="desc">Naruto Uzumaki is the main character in the manga and anime series Naruto.
+                 Naruto is a ninja-in-training who is serious about becoming the world's greatest ninja.</div>
+          </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="images/nezuko.jpg">
+              <img src="images/nezuko.jpg" alt="Nezuko" >
+            </a>
+            <div class="desc">Nezuko is a kind and caring girl that takes care of her family, 
+                often helping with chores around the home.</div>
+          </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="images/Gojo.jpg">
+              <img src="images/Gojo.jpg" alt="Gojo">
+            </a>
+            <div class="desc">Satoru Gojo is a character in Jujutsu Kaisen. 
+                He is a tall, lean, muscular man in his late twenties with snow-white hair and bright blue eyes.</div>
+          </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="images/opm.jpg">
+              <img src="images/opm.jpg" alt="Saitama">
+            </a>
+            <div class="desc">Saitama is a fictional character from the Japanese manga and anime series One Punch Man.
+                 He is a superhero who can defeat any opponent with a single punch.</div>
+          </div>
+    </div>
+    <hr>
+    <div class="links">
+        <h2>CSS Links </h2>
+        <a class="l" href="css.html">This is a link.</a>
+        <br> This link will be pink in color(by default)
+        <br>It will change to red color when hover
+        <br>It will change to blue color when you click on it
+    </div>
+    <hr>
+    <h1>Pseudo classes and elements</h1>
+    <div class="pseudo">
+        Hover on this to view the paragraph
+        <p class="parag">This is made using pseudo class</p>
+    </div>
+    <br><br>
+    <div class="pseudo-text">
+        This is a paragraph made by using pseudo elements.<br>
+    </div>
+    The first line will be of different color and the first letter will be of different color and size
+</body>
+</html>
